@@ -27,7 +27,7 @@ class GenerateTests(unittest.TestCase):
             "catalogueUrl": "https://example.org/catalogue",
             "re3dataIdentifiers": {
                 "re3data": "r3d100014932",
-                "doi": "https://doi.org/",
+                "doi": "https://doi.org/10.17616/R31NJO0K",
             },
             "description": "Example",
             "repositoryType": "disciplinary",
@@ -58,7 +58,7 @@ class GenerateTests(unittest.TestCase):
             )
             self.assertEqual(
                 root.findtext(".//r3d:identifiers/r3d:doi", namespaces=namespace),
-                "https://doi.org/",
+                "https://doi.org/10.17616/R31NJO0K",
             )
 
     def test_source_reference_is_included(self):
